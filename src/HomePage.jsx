@@ -4,6 +4,7 @@ import DevDarshan from "./DevDarshan";
 import SpotLight from "./SpotLight";
 import Attractions from "./Attractions";
 import Header from "./Header";
+import Signup from "./Signup";
 function HomePage() {
   return (
     <div>

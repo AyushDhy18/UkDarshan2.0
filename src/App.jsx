@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { Route, Routes } from "react-router-dom";
 import DevDarshan from "./DevDarshan";
 import LoginPage from "./LoginPage";
+import Signup from "./Signup";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
           <Route path="/CharDham" element={<DevDarshan />} />
 
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
 
         <Footer />

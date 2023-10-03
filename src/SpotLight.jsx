@@ -11,7 +11,7 @@ function SpotLight() {
         <h1 className="my-5 text-3xl font-black text-center ">
           Spotlight Destinations
         </h1>
-        <div className="flex flex-wrap justify-around mr-auto">
+        <div className="grid justify-around grid-cols-5 mr-auto place-items-center">
           {/* <SpotlightCard
             placeName="Dehradun"
             image="bg-[url('https://res.cloudinary.com/tourhq/image/upload/c_fill,f_auto,fl_progressive,q_auto,g_auto,h_262,w_382/spotlight_images/saudi_img')]"

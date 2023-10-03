@@ -25,7 +25,7 @@ function LoginPage() {
           <input
             type="Password"
             placeholder="Password"
-            className="p-2 mb-4 border w-80 rounded-2xl"
+            className="p-2 mb-4 border w-80 rounded-xl"
           ></input>
           <button className="p-2 text-white border bg-lime-700 w-80 rounded-2xl">
             Log in
@@ -38,7 +38,7 @@ function LoginPage() {
 
           <div className="flex justify-center">
             <button className="px-5 py-2 text-white bg-blue-500 border rounded-2xl">
-              Sign Up
+              <Link to="/signup">Sign Up</Link>
             </button>
           </div>
         </div>
