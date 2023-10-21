@@ -37,8 +37,10 @@ function LoginPage() {
           <hr className="mb-3 " />
 
           <div className="flex justify-center">
-            <button className="px-5 py-2 text-white bg-blue-500 border rounded-2xl">
-              <Link to="/signup">Sign Up</Link>
+            <button className="text-white bg-blue-500 border rounded-2xl">
+              <Link to="/signup" className="px-5 py-2">
+                Sign Up
+              </Link>
             </button>
           </div>
         </div>

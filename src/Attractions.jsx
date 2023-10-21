@@ -10,9 +10,21 @@ function Attractions() {
           Top Attractions
         </h1>
         <div className="grid justify-center grid-cols-3 gap-x-4 p-9">
-          <AttractionCard></AttractionCard>
-          <AttractionCard></AttractionCard>
-          <AttractionCard></AttractionCard>
+          <AttractionCard
+            id="Auli"
+            photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQpV-krNESUqNfBL70eZ74zOx7qHa_qO5DJA&usqp=CAU "
+          ></AttractionCard>
+
+          <AttractionCard
+            id="mussoorie"
+            photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCzoa0mOdVuunetDMW6qiEVzSCnwVWyP0QA&usqp=CAU"
+          ></AttractionCard>
+
+          <AttractionCard
+            id="Nanital Lake"
+            photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIKNKhkOCpinqo4_WWuUjdr6RUm-Kunb2tkw&usqp=CAU"
+          ></AttractionCard>
+
           <AttractionCard></AttractionCard>
           <AttractionCard></AttractionCard>
           <AttractionCard></AttractionCard>
