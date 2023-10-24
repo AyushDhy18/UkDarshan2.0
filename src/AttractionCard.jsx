@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function AttractionCard({ id, photo }) {
+function AttractionCard({ description, id, title, thumbnail }) {
   return (
     <>
       <div className="shadow mb-7 hover:shadow-2xl ">
@@ -12,8 +12,8 @@ function AttractionCard({ id, photo }) {
         >
           <div className="flex flex-row">
             <img
-              src={photo}
-              alt={id}
+              src={thumbnail}
+              alt={title}
               className="w-20 h-20 mr-3 rounded-lg"
             ></img>
 
@@ -25,9 +25,9 @@ function AttractionCard({ id, photo }) {
               blank"
                   className="text-lg font-bold decoration-auto hover:underline decoration-3 "
                 >
-                  {id}
+                  {title}
                 </Link>
-                <p>1,440 Tour and Activities</p>
+                <p>{description}</p>
               </div>
             </div>
           </div>

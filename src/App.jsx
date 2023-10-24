@@ -6,6 +6,7 @@ import DevDarshan from "./DevDarshan";
 import LoginPage from "./LoginPage";
 import Signup from "./Signup";
 import DestinationInfo from "./DestinationInfo";
+import Loading from "./Loading";
 function App() {
   return (
     <>

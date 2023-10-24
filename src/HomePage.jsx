@@ -11,8 +11,8 @@ function HomePage() {
 
   useEffect(() => {
     getListData().then((dataList) => {
-      setDataList(dataList);
-      console.log(dataList.id);
+      setDataList(dataList.data);
+      console.log(dataList);
     });
   }, []);
 
@@ -31,14 +31,14 @@ function HomePage() {
             <a href="" id="query"></a>
           </div>
         </div>
-        <h1 className="text-4xl bg-red-700 ">{dataList.title}</h1>
+
         <div className="h-64"></div>
 
         <SpotLight />
 
         <div className="h-64"></div>
 
-        <Attractions></Attractions>
+        <Attractions data={dataList}></Attractions>
 
         <div className="h-64"></div>
         <DevDarshan></DevDarshan>
