@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { VscAccount } from "react-icons/vsc";
+import { BiLogOut } from "react-icons/bi";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
+  const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  console.log("user is", user);
+
   return (
     <div className="bg-[url('/Hills.jpg')]">
       <div className="inset-x-0 top-0 flex justify-between px-16 py-2 overflow-hidden bg-black rounded-full shadow-lg">
@@ -35,12 +40,24 @@ const Header = () => {
           >
             attractions
           </a>
-          <Link
-            className="ml-10 font-semibold text-lime-600 hover:text-white"
-            to="/login"
-          >
-            <VscAccount className="mt-2 text-3xl" />
-          </Link>
+          {isAuthenticated == false ? (
+            <button
+              className="ml-10 font-semibold text-lime-600 hover:text-white"
+              onClick={(e) => loginWithRedirect()}
+            >
+              <VscAccount className="mt-2 text-3xl" />
+            </button>
+          ) : (
+            <>
+              <button
+                className="ml-10 font-semibold text-lime-600 hover:text-white"
+                onClick={(e) => logout()}
+              >
+                <BiLogOut className="mt-2 text-3xl" />
+              </button>
+              <h1 className="text-white">{user.name}</h1>
+            </>
+          )}
         </div>
       </div>
     </div>
