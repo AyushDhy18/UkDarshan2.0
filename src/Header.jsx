@@ -28,12 +28,12 @@ const Header = () => {
           >
             SpotLight
           </a>
-          <a
+          <Link
             className="ml-10 text-2xl font-semibold text-lime-600 hover:text-white"
-            href="#spritual"
+            to="/Blogs"
           >
-            SpritualPlaces
-          </a>
+            BLogs
+          </Link>
           <a
             className="ml-10 text-2xl font-semibold text-white hover:text-lime-600"
             href="#attractions"

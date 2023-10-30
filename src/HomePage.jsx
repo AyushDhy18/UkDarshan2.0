@@ -19,7 +19,6 @@ function HomePage() {
   return (
     <div>
       <div className="">
-        <Header></Header>
         <div className="h-screen bg-cover bg-no-repeat flex flex-col place-content-center bg-[url('/Hills.jpg')]">
           {/* Search bar */}
           <input

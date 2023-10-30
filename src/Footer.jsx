@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <div className="px-24 py-16 text-white bg-black h-80">
+      <footer className="px-24 py-16 text-white bg-black h-80">
         <div className="flex flex-col">
           <div className="flex ">
             <img src="/LogoUK.png" alt="logo" className="h-8 mr-2" />
@@ -15,7 +15,7 @@ function Footer() {
         </div>
 
         <div className="border-y-4"></div>
-      </div>
+      </footer>
     </>
   );
 }
