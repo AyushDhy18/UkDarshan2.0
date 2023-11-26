@@ -13,12 +13,12 @@ const Header = () => {
       <div className="inset-x-0 top-0 flex justify-between px-16 py-2 overflow-hidden bg-black rounded-full shadow-lg">
         <div className="flex">
           <img className="h-12 mr-3 " src="/LogoUK.png" />
-          <a
+          <Link
             className="self-center text-2xl font-semibold text-lime-600 hover:text-sky-600 hover:font-bold"
-            href=""
+            to="/"
           >
             UK दर्शन
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center">
